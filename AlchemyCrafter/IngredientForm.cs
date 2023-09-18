@@ -10,10 +10,17 @@ using System.Windows.Forms;
 
 namespace AlchemyCrafter
 {
-    //public delegate Ingredient ();
+    internal delegate void del_addIngredient(Ingredient x);
 
     public partial class IngredientForm : Form
     {
+        internal del_addIngredient AddIngredientCallback;
+
+        internal Ingredient pIngredient {
+            get { return pIngredient; }
+            set { pIngredient = value; }
+        }
+
         public IngredientForm()
         {
             InitializeComponent();
@@ -21,6 +28,10 @@ namespace AlchemyCrafter
 
         private void btn_addContinue_Click(object sender, EventArgs e)
         {
+            if (tb_name.Text.Length <= 0) return;
+            if ((tb_effect1.Text.Length <= 0)
+                    && (tb_effect2.Text.Length <= 0)
+                    && (tb_effect3.Text.Length <= 0)) return;
             AddItem();
             ClearForm();
         }
@@ -44,6 +55,8 @@ namespace AlchemyCrafter
                 (TypeComponent)cbo_componentType.SelectedIndex,
                 regions
                 );
+            if (AddIngredientCallback != null)
+                AddIngredientCallback(item);
         }
 
         private void ClearForm()
@@ -54,7 +67,9 @@ namespace AlchemyCrafter
             tb_effect1.Text = "";
             tb_effect2.Text = "";
             tb_effect3.Text = "";
+            chklb_regions.SelectedIndices.Clear();
             chklb_regions.ClearSelected();
+            tb_name.Focus();
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
@@ -64,7 +79,7 @@ namespace AlchemyCrafter
 
         private void QuitForm()
         {
-
+            this.Close();
         }
     }
 }

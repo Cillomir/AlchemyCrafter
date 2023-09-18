@@ -71,7 +71,7 @@
             this.cbo_rank.Location = new System.Drawing.Point(140, 104);
             this.cbo_rank.Name = "cbo_rank";
             this.cbo_rank.Size = new System.Drawing.Size(64, 21);
-            this.cbo_rank.TabIndex = 0;
+            this.cbo_rank.TabIndex = 7;
             this.cbo_rank.Text = "Rank 1";
             // 
             // btn_addContinue
@@ -79,7 +79,7 @@
             this.btn_addContinue.Location = new System.Drawing.Point(12, 276);
             this.btn_addContinue.Name = "btn_addContinue";
             this.btn_addContinue.Size = new System.Drawing.Size(144, 24);
-            this.btn_addContinue.TabIndex = 1;
+            this.btn_addContinue.TabIndex = 20;
             this.btn_addContinue.Text = "Add and Continue";
             this.btn_addContinue.UseVisualStyleBackColor = true;
             this.btn_addContinue.Click += new System.EventHandler(this.btn_addContinue_Click);
@@ -89,7 +89,7 @@
             this.btn_addReturn.Location = new System.Drawing.Point(238, 276);
             this.btn_addReturn.Name = "btn_addReturn";
             this.btn_addReturn.Size = new System.Drawing.Size(144, 24);
-            this.btn_addReturn.TabIndex = 2;
+            this.btn_addReturn.TabIndex = 21;
             this.btn_addReturn.Text = "Add and Return";
             this.btn_addReturn.UseVisualStyleBackColor = true;
             this.btn_addReturn.Click += new System.EventHandler(this.btn_addReturn_Click);
@@ -101,7 +101,7 @@
             this.lbl_name.Location = new System.Drawing.Point(12, 9);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(52, 18);
-            this.lbl_name.TabIndex = 3;
+            this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "Name:";
             // 
             // tb_name
@@ -110,7 +110,7 @@
             this.tb_name.Location = new System.Drawing.Point(68, 8);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(256, 21);
-            this.tb_name.TabIndex = 4;
+            this.tb_name.TabIndex = 1;
             // 
             // lbl_rank
             // 
@@ -118,7 +118,7 @@
             this.lbl_rank.Location = new System.Drawing.Point(140, 88);
             this.lbl_rank.Name = "lbl_rank";
             this.lbl_rank.Size = new System.Drawing.Size(36, 13);
-            this.lbl_rank.TabIndex = 5;
+            this.lbl_rank.TabIndex = 6;
             this.lbl_rank.Text = "Rank:";
             // 
             // lbl_effect1
@@ -127,7 +127,7 @@
             this.lbl_effect1.Location = new System.Drawing.Point(12, 136);
             this.lbl_effect1.Name = "lbl_effect1";
             this.lbl_effect1.Size = new System.Drawing.Size(47, 13);
-            this.lbl_effect1.TabIndex = 6;
+            this.lbl_effect1.TabIndex = 10;
             this.lbl_effect1.Text = "Effect 1:";
             // 
             // lbl_effect2
@@ -136,7 +136,7 @@
             this.lbl_effect2.Location = new System.Drawing.Point(210, 136);
             this.lbl_effect2.Name = "lbl_effect2";
             this.lbl_effect2.Size = new System.Drawing.Size(47, 13);
-            this.lbl_effect2.TabIndex = 7;
+            this.lbl_effect2.TabIndex = 12;
             this.lbl_effect2.Text = "Effect 2:";
             // 
             // lbl_effect3
@@ -145,7 +145,7 @@
             this.lbl_effect3.Location = new System.Drawing.Point(408, 136);
             this.lbl_effect3.Name = "lbl_effect3";
             this.lbl_effect3.Size = new System.Drawing.Size(47, 13);
-            this.lbl_effect3.TabIndex = 8;
+            this.lbl_effect3.TabIndex = 14;
             this.lbl_effect3.Text = "Effect 3:";
             // 
             // tb_effect1
@@ -153,21 +153,21 @@
             this.tb_effect1.Location = new System.Drawing.Point(12, 152);
             this.tb_effect1.Name = "tb_effect1";
             this.tb_effect1.Size = new System.Drawing.Size(176, 20);
-            this.tb_effect1.TabIndex = 9;
+            this.tb_effect1.TabIndex = 11;
             // 
             // tb_effect2
             // 
             this.tb_effect2.Location = new System.Drawing.Point(210, 152);
             this.tb_effect2.Name = "tb_effect2";
             this.tb_effect2.Size = new System.Drawing.Size(176, 20);
-            this.tb_effect2.TabIndex = 10;
+            this.tb_effect2.TabIndex = 13;
             // 
             // tb_effect3
             // 
             this.tb_effect3.Location = new System.Drawing.Point(408, 152);
             this.tb_effect3.Name = "tb_effect3";
             this.tb_effect3.Size = new System.Drawing.Size(176, 20);
-            this.tb_effect3.TabIndex = 11;
+            this.tb_effect3.TabIndex = 15;
             // 
             // lbl_ingredientType
             // 
@@ -175,7 +175,7 @@
             this.lbl_ingredientType.Location = new System.Drawing.Point(12, 88);
             this.lbl_ingredientType.Name = "lbl_ingredientType";
             this.lbl_ingredientType.Size = new System.Drawing.Size(84, 13);
-            this.lbl_ingredientType.TabIndex = 12;
+            this.lbl_ingredientType.TabIndex = 4;
             this.lbl_ingredientType.Text = "Ingredient Type:";
             // 
             // cbo_ingredientType
@@ -187,15 +187,16 @@
             this.cbo_ingredientType.Location = new System.Drawing.Point(12, 104);
             this.cbo_ingredientType.Name = "cbo_ingredientType";
             this.cbo_ingredientType.Size = new System.Drawing.Size(96, 21);
-            this.cbo_ingredientType.TabIndex = 13;
+            this.cbo_ingredientType.TabIndex = 5;
             this.cbo_ingredientType.Text = "Component";
             // 
             // btn_cancel
             // 
+            this.btn_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_cancel.Location = new System.Drawing.Point(472, 276);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(112, 24);
-            this.btn_cancel.TabIndex = 14;
+            this.btn_cancel.TabIndex = 22;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -206,7 +207,7 @@
             this.lbl_shortDesc.Location = new System.Drawing.Point(12, 40);
             this.lbl_shortDesc.Name = "lbl_shortDesc";
             this.lbl_shortDesc.Size = new System.Drawing.Size(91, 13);
-            this.lbl_shortDesc.TabIndex = 15;
+            this.lbl_shortDesc.TabIndex = 2;
             this.lbl_shortDesc.Text = "Short Description:";
             // 
             // lbl_longDesc
@@ -215,7 +216,7 @@
             this.lbl_longDesc.Location = new System.Drawing.Point(12, 184);
             this.lbl_longDesc.Name = "lbl_longDesc";
             this.lbl_longDesc.Size = new System.Drawing.Size(90, 13);
-            this.lbl_longDesc.TabIndex = 16;
+            this.lbl_longDesc.TabIndex = 18;
             this.lbl_longDesc.Text = "Long Description:";
             // 
             // tb_shortDesc
@@ -223,7 +224,7 @@
             this.tb_shortDesc.Location = new System.Drawing.Point(12, 56);
             this.tb_shortDesc.Name = "tb_shortDesc";
             this.tb_shortDesc.Size = new System.Drawing.Size(312, 20);
-            this.tb_shortDesc.TabIndex = 17;
+            this.tb_shortDesc.TabIndex = 3;
             // 
             // tb_longDesc
             // 
@@ -232,7 +233,7 @@
             this.tb_longDesc.Multiline = true;
             this.tb_longDesc.Name = "tb_longDesc";
             this.tb_longDesc.Size = new System.Drawing.Size(572, 64);
-            this.tb_longDesc.TabIndex = 18;
+            this.tb_longDesc.TabIndex = 19;
             // 
             // chklb_regions
             // 
@@ -256,7 +257,7 @@
             this.chklb_regions.MultiColumn = true;
             this.chklb_regions.Name = "chklb_regions";
             this.chklb_regions.Size = new System.Drawing.Size(200, 109);
-            this.chklb_regions.TabIndex = 19;
+            this.chklb_regions.TabIndex = 17;
             // 
             // lbl_region
             // 
@@ -264,7 +265,7 @@
             this.lbl_region.Location = new System.Drawing.Point(336, 12);
             this.lbl_region.Name = "lbl_region";
             this.lbl_region.Size = new System.Drawing.Size(44, 13);
-            this.lbl_region.TabIndex = 20;
+            this.lbl_region.TabIndex = 16;
             this.lbl_region.Text = "Region:";
             // 
             // lbl_componentType
@@ -273,7 +274,7 @@
             this.lbl_componentType.Location = new System.Drawing.Point(228, 88);
             this.lbl_componentType.Name = "lbl_componentType";
             this.lbl_componentType.Size = new System.Drawing.Size(91, 13);
-            this.lbl_componentType.TabIndex = 21;
+            this.lbl_componentType.TabIndex = 8;
             this.lbl_componentType.Text = "Component Type:";
             // 
             // cbo_componentType
@@ -287,13 +288,14 @@
             this.cbo_componentType.Location = new System.Drawing.Point(228, 104);
             this.cbo_componentType.Name = "cbo_componentType";
             this.cbo_componentType.Size = new System.Drawing.Size(96, 21);
-            this.cbo_componentType.TabIndex = 22;
+            this.cbo_componentType.TabIndex = 9;
             this.cbo_componentType.Text = "Herb";
             // 
             // IngredientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btn_cancel;
             this.ClientSize = new System.Drawing.Size(596, 309);
             this.Controls.Add(this.cbo_componentType);
             this.Controls.Add(this.lbl_componentType);
@@ -319,8 +321,14 @@
             this.Controls.Add(this.btn_addContinue);
             this.Controls.Add(this.cbo_rank);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(612, 348);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(612, 348);
             this.Name = "IngredientForm";
-            this.Text = "IngredientForm";
+            this.ShowInTaskbar = false;
+            this.Text = "Create New Ingredients";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
