@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* **************************************************
+* Alchemy Crafter - Potion v0.1.0
+* Author: Joel Leckie
+* Created: Sep. 2023
+*  v0.1.0 - Created potion class with classes for ranks
+*           and effects.
+************************************************** */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,13 +22,15 @@ namespace AlchemyCrafter
     {
         private static int nextID = 0;
         private static List<PotionEffectCategory> allCategories = new List<PotionEffectCategory>();
+        public static List<PotionEffectCategory> All { get { return allCategories; } }
         private int ID;
-        private string Name;
-        public PotionEffectCategory(string Name) 
+        private string name;
+        public string Name { get { return name; } set { name = value; } }
+        public PotionEffectCategory(string name) 
         {
             this.ID = nextID++;
-            this.Name = Name;
-            if (this.Name == null) return;
+            this.name = Name;
+            if (this.name == null) return;
             if (InList(this)) return;
             allCategories.Add(this);
         }
@@ -36,13 +45,15 @@ namespace AlchemyCrafter
     {
         private static int nextID = 0;
         private static List<PotionEffectRank> allRanks = new List<PotionEffectRank>();
+        public static List<PotionEffectRank> All { get { return allRanks; } }
         private int ID;
-        private string Name;
-        public PotionEffectRank(string Name)
+        private string name;
+        public string Name { get { return name; } set { name = value; } }
+        public PotionEffectRank(string name)
         {
             this.ID = nextID++;
-            this.Name = Name;
-            if (this.Name == null) return;
+            this.name = name;
+            if (this.name == null) return;
             if (InList(this)) return;
             allRanks.Add(this);
         }
@@ -57,15 +68,19 @@ namespace AlchemyCrafter
     {
         private static int nextID = 0;
         private static List<PotionEffect> allEffects = new List<PotionEffect>();
+        public static List<PotionEffect> All { get { return allEffects; } }
         private int ID;
-        private string Name;
+        private string name;
+        public string Name { get { return name; } set { name = value; } }
         private PotionEffectCategory category;
+        public PotionEffectCategory Category { get { return category; } set { category = value; } }
         private PotionEffectRank rank;
+        public PotionEffectRank Rank { get { return rank; } set { rank = value; } }
 
-        public PotionEffect(string Name, PotionEffectCategory category, PotionEffectRank rank)
+        public PotionEffect(string name, PotionEffectCategory category, PotionEffectRank rank)
         {
             this.ID = nextID++;
-            this.Name = Name;
+            this.name = name;
             this.category = category;
             this.rank = rank;
             if ((this.Name == null) || (this.category == null) || (this.rank == null)) return;

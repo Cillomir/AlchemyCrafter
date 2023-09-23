@@ -73,10 +73,10 @@
             this.cbo_component1 = new System.Windows.Forms.ComboBox();
             this.cbo_component2 = new System.Windows.Forms.ComboBox();
             this.cbo_component3 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridViewResult = new System.Windows.Forms.DataGridView();
             this.btn_effectList = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewResult)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -443,16 +443,16 @@
             this.cbo_component3.Size = new System.Drawing.Size(144, 21);
             this.cbo_component3.TabIndex = 14;
             // 
-            // dataGridView1
+            // gridViewResult
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 199);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(682, 120);
-            this.dataGridView1.TabIndex = 15;
+            this.gridViewResult.AllowUserToAddRows = false;
+            this.gridViewResult.AllowUserToDeleteRows = false;
+            this.gridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewResult.Location = new System.Drawing.Point(12, 199);
+            this.gridViewResult.Name = "gridViewResult";
+            this.gridViewResult.ReadOnly = true;
+            this.gridViewResult.Size = new System.Drawing.Size(682, 120);
+            this.gridViewResult.TabIndex = 15;
             // 
             // btn_effectList
             // 
@@ -470,7 +470,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 331);
             this.Controls.Add(this.btn_effectList);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridViewResult);
             this.Controls.Add(this.cbo_component3);
             this.Controls.Add(this.cbo_component2);
             this.Controls.Add(this.cbo_component1);
@@ -486,13 +486,17 @@
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.lbl_reagent);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(722, 370);
+            this.MinimumSize = new System.Drawing.Size(722, 370);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Alchemy Crafter";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewResult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,21 +535,21 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label lbl_reagent;
-        private System.Windows.Forms.Button btn_reset;
-        private System.Windows.Forms.Button btn_newIngredient;
-        private System.Windows.Forms.Button btn_newPotion;
-        private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Label lbl_component1;
         private System.Windows.Forms.Label lbl_component2;
         private System.Windows.Forms.Label lbl_component3;
         private System.Windows.Forms.Label lbl_filterReagent;
-        private System.Windows.Forms.ComboBox cbo_filterReagent;
         private System.Windows.Forms.ComboBox cbo_reagent;
         private System.Windows.Forms.ComboBox cbo_component1;
         private System.Windows.Forms.ComboBox cbo_component2;
         private System.Windows.Forms.ComboBox cbo_component3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbo_filterReagent;
+        private System.Windows.Forms.DataGridView gridViewResult;
+        private System.Windows.Forms.Button btn_newIngredient;
+        private System.Windows.Forms.Button btn_newPotion;
         private System.Windows.Forms.Button btn_effectList;
+        private System.Windows.Forms.Button btn_search;
+        private System.Windows.Forms.Button btn_reset;
     }
 }
 

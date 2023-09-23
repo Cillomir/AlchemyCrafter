@@ -320,6 +320,7 @@
             this.Controls.Add(this.btn_addReturn);
             this.Controls.Add(this.btn_addContinue);
             this.Controls.Add(this.cbo_rank);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(612, 348);
@@ -336,28 +337,28 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cbo_rank;
-        private System.Windows.Forms.Button btn_addContinue;
-        private System.Windows.Forms.Button btn_addReturn;
         private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.TextBox tb_name;
+        private System.Windows.Forms.Label lbl_shortDesc;
+        private System.Windows.Forms.Label lbl_ingredientType;
         private System.Windows.Forms.Label lbl_rank;
+        private System.Windows.Forms.Label lbl_componentType;
         private System.Windows.Forms.Label lbl_effect1;
         private System.Windows.Forms.Label lbl_effect2;
         private System.Windows.Forms.Label lbl_effect3;
+        private System.Windows.Forms.Label lbl_region;
+        private System.Windows.Forms.Label lbl_longDesc;
+        private System.Windows.Forms.TextBox tb_name;
+        private System.Windows.Forms.TextBox tb_shortDesc;
+        private System.Windows.Forms.ComboBox cbo_ingredientType;
+        private System.Windows.Forms.ComboBox cbo_rank;
+        private System.Windows.Forms.ComboBox cbo_componentType;
         private System.Windows.Forms.TextBox tb_effect1;
         private System.Windows.Forms.TextBox tb_effect2;
         private System.Windows.Forms.TextBox tb_effect3;
-        private System.Windows.Forms.Label lbl_ingredientType;
-        private System.Windows.Forms.ComboBox cbo_ingredientType;
-        private System.Windows.Forms.Button btn_cancel;
-        private System.Windows.Forms.Label lbl_shortDesc;
-        private System.Windows.Forms.Label lbl_longDesc;
-        private System.Windows.Forms.TextBox tb_shortDesc;
-        private System.Windows.Forms.TextBox tb_longDesc;
         private System.Windows.Forms.CheckedListBox chklb_regions;
-        private System.Windows.Forms.Label lbl_region;
-        private System.Windows.Forms.Label lbl_componentType;
-        private System.Windows.Forms.ComboBox cbo_componentType;
+        private System.Windows.Forms.TextBox tb_longDesc;
+        private System.Windows.Forms.Button btn_addContinue;
+        private System.Windows.Forms.Button btn_addReturn;
+        private System.Windows.Forms.Button btn_cancel;
     }
 }

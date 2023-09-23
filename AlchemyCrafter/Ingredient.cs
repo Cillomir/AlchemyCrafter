@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* **************************************************
+* Alchemy Crafter - Ingredient v0.1.0
+* Author: Joel Leckie
+* Created: Sep. 2023
+*  v0.1.0 - Created ingredient class with classes for ranks
+*           and effects.
+************************************************** */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Printing;
@@ -153,6 +160,30 @@ namespace AlchemyCrafter
             return val;
         }
     }
+
+    public class IngredientEffectRank
+    {
+        private static int nextID = 0;
+        private static List<IngredientEffectRank> allRanks = new List<IngredientEffectRank>();
+        public static List<IngredientEffectRank> All { get { return allRanks; } }
+        private int ID;
+        private string name;
+        public string Name { get { return name; } set { name = value; } }
+        public IngredientEffectRank(string name)
+        {
+            this.ID = nextID++;
+            this.name = name;
+            if (this.name == null) return;
+            if (InList(this)) return;
+            allRanks.Add(this);
+        }
+        public static bool InList(IngredientEffectRank rank)
+        {
+            if (allRanks.Exists(r => r.Name.Equals(rank.Name))) return true;
+            else return false;
+        }
+    }
+
     internal static class Extensions 
     {
         public static void ToCSV(this Ingredient ingred, string filePath)

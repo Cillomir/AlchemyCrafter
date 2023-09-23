@@ -117,11 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="arrow_downward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\arrow_downward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_upward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\arrow_upward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="saveEffectDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="openEffectDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAP8AAAB/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AH8AAAD/AAAAAAAAAH8AcAD/AAAAfwAAAH8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAH8AAAD/AAAA/wAA
+        AH8AAAB/AHAA/wAAAH8AAAD/AH0A/wA4AP8xljH/JpAm/yaQJv8AWQD/AAAA/wAAAH8AWQD/JpAm/yaQ
+        Jv8xljH/ADgA/wB9AP8AAAD/AD8A/wB9AP8NhA3/MZYx/zGWMf8AsgD/ALIA/wAAAP8AAAD/ALIA/wCy
+        AP8xljH/MZYx/w2EDf8AfQD/AD8A/wA/AP8AfQD/Gooa/wAAAP8AsgD/AAAA/wDMAP8AzAD/AMwA/wDM
+        AP8AAAD/ALIA/wAAAP8aihr/AH0A/wA/AP8APwD/Gooa/xqKGv8aihr/DUUN/wDMAP8AzAD/AMwA/wDM
+        AP8AzAD/AMwA/w1FDf8aihr/Gooa/xqKGv8APwD/DUUN/xqKGv8aihr/Gooa/wDMAP8AzAD/AFkA/wB9
+        AP8AfQD/AFkA/wDMAP8AzAD/Gooa/xqKGv8aihr/DUUN/wAAAP8mkCb/Gooa/wAAAP8AzAD/AMwA/xqK
+        Gv8NhA3/DYQN/xqKGv8AzAD/AMwA/wAAAP8aihr/JpAm/wAAAP8AAAB/MZYx/yaQJv8AAAB/AGYA/wDM
+        AP8AZgD/AMwA/wDMAP8AZgD/AMwA/wBmAP8AAAB/JpAm/zGWMf8AAAB/AAAAADGWMf8ZSxn/AAAAAAAA
+        AP9z2XP/AMIA/wC3AP8AtwD/AMIA/3PZc/8AAAB/AAAAABlLGf8xljH/AAAAfwAAAAAAAAD/AAAAfwAA
+        AAAAAAAADaEN/xmnGf8xljH/MZYx/xmnGf8NoQ3/AAAAfwAAAAAAAAB/AAAA/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAP8aihr/Gooa/xqKGv8aihr/AAAA/wAAAAAAAAAAAAAAAAAAAH8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAB/DYQN/wAAAH8AAAB/DYQN/wAAAH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AP8AAAB/AAAAfwA/AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/AAAAAAAAAAAAAAB/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAL/9AACzzQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAkAAJAZAAC4HQAA+B8AAP2/
+        AAD9vwAA//8AAA==
+</value>
   </data>
 </root>
